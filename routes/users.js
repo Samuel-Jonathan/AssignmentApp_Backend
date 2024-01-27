@@ -1,4 +1,4 @@
-    let User = require('../model/user');
+let User = require('../model/user');
 
 function getUser(req, res) {
     let username = req.params.username;
