@@ -31,7 +31,7 @@ mongoose.connect(uri, options)
 
 // Pour accepter les connexions cross-domain (CORS)
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://assignmentapp-3x7i.onrender.com");
+  res.header("Access-Control-Allow-Origin", "https://assignmentapp-frontend.onrender.com");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.header("Access-Control-Allow-Credentials", "true"); // Ajoutez cette ligne
@@ -44,7 +44,7 @@ app.use(function (req, res, next) {
 });
 
 app.options('*', (req, res) => {
-  res.header("Access-Control-Allow-Origin", "https://assignmentapp-3x7i.onrender.com");
+  res.header("Access-Control-Allow-Origin", "https://assignmentapp-frontend.onrender.com");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.header("Access-Control-Allow-Credentials", "true");
