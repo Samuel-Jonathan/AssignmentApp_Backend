@@ -138,7 +138,7 @@ app.route(prefix + '/students')
 // On démarre le serveur
 app.listen(port, "0.0.0.0");
 console.log('Serveur démarré sur http://localhost:' + port);
-
+console.log(`Current directory: ${process.cwd()}`);
 module.exports = app;
 
 
